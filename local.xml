@@ -1,12 +1,6 @@
 <manifest>
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/"
-           sync-c="true"
-           sync-j="4"/>
-
   <remote  name="fennec"
-           fetch="https://github.com/"
-           review="review.gerrithub.io"
+           fetch="https://gitlab.com/"
            sync-c="true"
            sync-j="4"/>
 
@@ -14,11 +8,12 @@
   <project name="fennec-devs/device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" revision="10.0" remote="fennec" />
 
   <project name="trinket-devs/vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" revision="10.0" />
-  <project name="trinket-devs/vendor_ANXCamera" path="vendor/ANXCamera" revision="master" />
-  <project name="trinket-devs/vendor_aeonax_ANXCamera" path="vendor/aeonax/ANXCamera" revision="master" />
+  <project name="fennec-devs/vendor_ANXCamera" path="vendor/ANXCamera" revision="master" remote="fennec" />
   <project name="trinket-devs/proton-clang" path="prebuilts/clang/host/linux-x86/clang-11.0" revision="master" clone-depth="1"/>
 
-  <project name="pshreejoy15/vendor_xiaomi_firmware" path="vendor/xiaomi/firmware" revision="ten" remote="gitlab" />
+  <project name="pshreejoy15/vendor_xiaomi_firmware" path="vendor/xiaomi/firmware" revision="ten" remote="fennec" />
+
+  <project name="FreakyOS/external_motorola_faceunlock" path="external/moto/faceunlock" revision="still_alive" />
 
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <project path="hardware/qcom-caf/sm8150/audio" name="trinket-devs/hardware_qcom-caf_sm8150_audio"  revision="ten" />
